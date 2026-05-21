@@ -247,7 +247,7 @@ $$
     <div>
       <div class="ksq-tag">志望校特化の戦略で、逆転合格を。</div>
       <h2 class="ksq-h2">「過去問で点が取れる」<br>その圧倒的な実感を、あなたへ。</h2>
-      <p class="ksq-body">学校や集団塾ではしてくれない、志望大学の過去問<strong style="color:#0b2240;">10年単位の研究</strong>に基づくオーダーメイドのカリキュラム。最難関大合格講師が、あなただけの合格ロードマップを直接設計します。</p>
+      <p class="ksq-body">学校や集団塾ではしてくれない、志望大学の過去問<strong style="color:#0b2240;">10年単位の研究</strong>に基づくオーダーメイドのカリキュラム。最難関大合格講師が、あなたの志望校の過去問を頻出分野の列挙にとどまらない、出題パターンまでの研究。Ksquareは、合格点を最短で取りに行く志望校専門塾です。</p>
       <a class="ksq-btn" href="https://lin.ee/X5acA6L">
         <div class="ksq-btn-slab">
           <svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M16 4C8.82 4 3 8.7 3 14.5c0 3.7 2.4 6.95 6 8.83V29l5.4-3.6c.52.04 1.06.07 1.6.07 7.18 0 13-4.7 13-10.47S23.18 4 16 4z" fill="#fff"></path></svg>
