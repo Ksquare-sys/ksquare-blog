@@ -208,6 +208,7 @@ $$
     .ksq-num { font-size:64px; line-height:1; letter-spacing:-0.03em; }
     .ksq-num-label { position:static; writing-mode:horizontal-tb; font-size:18px; letter-spacing:0.18em; font-weight:500; }
     .ksq-num-rule, .ksq-num-note { display:none; }
+    .ksq-tag { margin-top: 24px; }
     .ksq-btn-title { white-space:normal; }
     .ksq-trust .sep { display:none; }
   }
@@ -217,7 +218,7 @@ $$
     .ksq-wordmark { font-size:19px; }
     .ksq-num { font-size:56px; }
     .ksq-num-label { font-size:15px; letter-spacing:0.14em; }
-    .ksq-tag { font-size:28px; letter-spacing:0.05em; margin-top:-40px; margin-bottom:12px; }
+    .ksq-tag { font-size:28px; letter-spacing:0.05em; margin-top:20px; margin-bottom:12px; }
     .ksq-h2 { font-size:24px; line-height:1.5; margin:0 0 22px; }
     .ksq-body { font-size:13.5px; line-height:1.9; margin:0 0 28px; }
     .ksq-btn { flex-direction:column; }
