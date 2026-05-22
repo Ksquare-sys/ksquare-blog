@@ -67,7 +67,7 @@ description: "千葉大学（理系）数学の過去問データ。最頻出分
 **[1] $\theta = \pi$ のとき**
 3円 $C, C_1, C_2$ の位置関係は下図の通りである。
 
-![図1：$\theta=\pi$の場合の3円](/images/chibadairikei_fig_1.png)
+![図1：$\theta=\pi$の場合の3円](/images/chibadairikei_8_1)
 
 上図より、
 $$2p + 2q = 2$$
@@ -77,7 +77,7 @@ $$\therefore q = 1-p$$
 **[2] $0 < \theta < \pi$ のとき**
 3円 $C, C_1, C_2$ の位置関係は下図の通りである。
 
-![図2：$0<\theta<\pi$の場合の3円](/images/chibadairikei_fig_2.png)
+![図2：$0<\theta<\pi$の場合の3円](/images/chibadairikei_8_2.png)
 
 円 $C_1, C_2$ は円 $C$ にそれぞれ内接するため、$OD = 1-p, OE = 1-q$ である。また、円 $C_1, C_2$ は互いに外接するため、$DE = p+q$ である。よって、三角形 $ODE$ について、余弦定理より、
 $$DE^2 = OD^2 + OE^2 - 2 \cdot OD \cdot OE \cdot \cos \theta$$
@@ -111,28 +111,27 @@ $$\lim_{\theta \to +0} \frac{q}{\theta^2} = \frac{1-p}{p+1-(1-p)\cdot 1} \cdot \
 **[1] $\theta = \frac{\pi}{2}$ のとき**
 $\angle DOE = \theta = \frac{\pi}{2} = \angle DHE$ であるため、$O=H$ であり、4円 $C, C_1, C_2, C_3$ の位置関係は次図の通りである。
 
-![図3：$\theta=\frac{\pi}{2}$の場合の位置関係](/images/chibadairikei_fig_3.png)
+![図3：$\theta=\frac{\pi}{2}$の場合の位置関係](/images/chibadairikei_8_3.png)
 
 円 $C$ の半径は $1$ であるため、上図（$O$ と $H$ が一致し、円 $C_1$ の直径が円 $C$ の半径に等しくなる状態）より、
 $$p = \frac{1}{2}$$
 となる。
 
-### (4) 直線OHと直線DFが直交し、関係式が成り立つことの証明
 
 **[2] $\theta \neq \frac{\pi}{2}$ のとき**
-$\angle DOE = \theta \neq \frac{\pi}{2} = \angle DHE$ より、$O \neq H$ であり、三角形 $ODF$ について、$OD = OF = 1 - p$ より、直線 $OH$ と直線 $DF$ は点 $H$ において直交する。ここで、$\theta$ と $\frac{\pi}{2}$ の大小関係によりさらに場合分けをする。
+$\angle DOE = \theta \neq \frac{\pi}{2} = \angle DHE$ より、$O \neq H$ であり、三角形 $ODF$ について、$OD = OF = 1 - p$ より、直線 $OH$ と直線 $DF$ は点 $H$ において直交する。ここで、$\theta$ と $\frac{\pi}{2}$ の大小関係により場合分けをする。
 
 **[i] $0 < \theta < \frac{\pi}{2}$ のとき**
-4円の位置関係は次図の通りである。
+4円 $C, C_1, C_2, C_3$ の位置関係は次図の通りである。
 
-![図4：$0<\theta<\frac{\pi}{2}$の場合の位置関係](/images/chibadairikei_fig_4.png)
+![図4：$0<\theta<\frac{\pi}{2}$の場合の位置関係](/images/chibadairikei_8_4.png)
 
 上図より、$\angle DOH = \theta$ であるため、$\sin \angle DOH = \sin \theta$ となる。
 
 **[ii] $\frac{\pi}{2} < \theta < \pi$ のとき**
-4円の位置関係は次図の通りである。
+4円 $C, C_1, C_2, C_3$ の位置関係は次図の通りである。
 
-![図5：$\frac{\pi}{2}<\theta<\pi$の場合の位置関係](/images/chibadairikei_fig_5.png)
+![図5：$\frac{\pi}{2}<\theta<\pi$の場合の位置関係](/images/chibadairikei_8_5.png)
 
 上図より、$\angle DOH = \pi - \theta$ であるため、$\sin \angle DOH = \sin(\pi - \theta) = \sin \theta$ となる。
 
@@ -142,12 +141,7 @@ $$
 $$
 が成り立つ。
 
----
-
-### (5) $p = \sqrt{2}-1$ のとき、$q$ の値を求める
-
-以上、(3)の[1]および(4)の[2]より、$0 < \theta < \pi$ のとき、$\sin \theta = \frac{p}{1-p}$、すなわち、$p = \frac{\sin \theta}{1+\sin \theta}$ が成り立つため、(1)より、
-
+以上、[1], [2]より、$0 < \theta < \pi$ のとき、$\sin \theta = \frac{p}{1-p}$、すなわち、$p = \frac{\sin \theta}{1+\sin \theta}$ が成り立つため、(1)より、
 $$
 \begin{aligned}
 q &= \frac{\left(1 - \frac{\sin \theta}{1+\sin \theta}\right)(1-\cos \theta)}{\frac{\sin \theta}{1+\sin \theta} + 1 - \left(1 - \frac{\sin \theta}{1+\sin \theta}\right)\cos \theta} \\
@@ -157,9 +151,7 @@ q &= \frac{\left(1 - \frac{\sin \theta}{1+\sin \theta}\right)(1-\cos \theta)}{\f
 &= \frac{\sin \theta}{2(1+\cos \theta) + \sin \theta}
 \end{aligned}
 $$
-
 である。また、$p = \sqrt{2}-1$ のとき、
-
 $$
 \begin{aligned}
 \sin \theta &= \frac{p}{1-p} \\
@@ -167,26 +159,32 @@ $$
 \Leftrightarrow \sin \theta &= \frac{\sqrt{2}}{2}
 \end{aligned}
 $$
-
 $$
 \therefore \theta = \frac{\pi}{4}, \frac{3}{4}\pi \quad (\because 0 < \theta < \pi)
 $$
-
 となる。よって、$\theta = \frac{\pi}{4}$ のとき、
-
 $$
 q = \frac{\frac{\sqrt{2}}{2}}{2\left(1+\frac{\sqrt{2}}{2}\right) + \frac{\sqrt{2}}{2}} = \frac{1}{3+2\sqrt{2}} = 3-2\sqrt{2}
 $$
-
 となり、$\theta = \frac{3}{4}\pi$ のとき、
-
 $$
 q = \frac{\frac{\sqrt{2}}{2}}{2\left(1-\frac{\sqrt{2}}{2}\right) + \frac{\sqrt{2}}{2}} = \frac{1}{2\sqrt{2}-1} = \frac{2\sqrt{2}+1}{7}
 $$
-
 となるため、求める値は $q = 3-2\sqrt{2}, \frac{2\sqrt{2}+1}{7}$ である。
 
 ---
+
+### (4) $\lim_{\theta \to +0} \frac{q}{p}$ を求めよ
+
+(3)より、
+$$
+\frac{q}{p} = \frac{\sin \theta}{2(1+\cos \theta) + \sin \theta} \cdot \left(\frac{\sin \theta}{1+\sin \theta}\right)^{-1} = \frac{1+\sin \theta}{2(1+\cos \theta) + \sin \theta}
+$$
+となるため、求める極限値は、
+$$
+\lim_{\theta \to +0} \frac{q}{p} = \frac{1+0}{2 \cdot (1+1) + 0} = \frac{1}{4}
+$$
+となる。
 
 <style>
   .ksq-cta { background:#fbf8f3; margin-top:40px; color:#16202e; font-family:'Noto Sans JP','Hiragino Kaku Gothic ProN',sans-serif; container-type:inline-size; }
