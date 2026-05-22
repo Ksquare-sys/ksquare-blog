@@ -79,7 +79,7 @@ $$\therefore q = 1-p$$
 
 ![図2：$0<\theta<\pi$の場合の3円](/images/chibadairikei_8_2.png)
 
-円 $C_1, C_2$ は円 $C$ にそれぞれ内接するため、$OD = 1-p, OE = 1-q$ である。  また、円 $C_1, C_2$ は互いに外接するため、$DE = p+q$ である。  よって、三角形 $ODE$ について、余弦定理より、
+円 $C_1, C_2$ は円 $C$ にそれぞれ内接するため、$OD = 1-p, OE = 1-q$ である。  また、円 $C_1, C_2$ は互いに外接するため、$DE = p+q$ である。<br>よって、三角形 $ODE$ について、余弦定理より、<br>
 $$DE^2 = OD^2 + OE^2 - 2 \cdot OD \cdot OE \cdot \cos \theta$$  
 $$\Leftrightarrow (p+q)^2 = (1-p)^2 + (1-q)^2 - 2(1-p)(1-q)\cos \theta$$  
 $$\Leftrightarrow p^2 + 2pq + q^2 = (p^2 - 2p + 1) + (q^2 - 2q + 1) - 2(1-p)\cos \theta + 2(1-p)q\cos \theta$$  
@@ -96,7 +96,7 @@ $$q = \frac{(1-p)(1-\cos \theta)}{p+1-(1-p)\cos \theta}$$
 $$\frac{q}{\theta^2} = \frac{1-p}{p+1-(1-p)\cos \theta} \cdot \frac{1-\cos \theta}{\theta^2}$$
 であり、
 $$\lim_{\theta \to +0} \frac{1-\cos \theta}{\theta^2} = \lim_{\theta \to +0} \left\{ \frac{1}{1+\cos \theta} \left(\frac{\sin \theta}{\theta}\right)^2 \right\} = \frac{1}{1+1} \cdot 1^2 = \frac{1}{2}$$
-であるため、求める極限値は、
+であるため、<br>求める極限値は、
 $$\lim_{\theta \to +0} \frac{q}{\theta^2} = \frac{1-p}{p+1-(1-p)\cdot 1} \cdot \frac{1}{2} = \frac{1-p}{2p}$$
 となる。
 
@@ -119,7 +119,7 @@ $$p = \frac{1}{2}$$
 
 
 **[2] $\theta \neq \frac{\pi}{2}$ のとき**
-$\angle DOE = \theta \neq \frac{\pi}{2} = \angle DHE$ より、$O \neq H$ であり、三角形 $ODF$ について、$OD = OF = 1 - p$ より、直線 $OH$ と直線 $DF$ は点 $H$ において直交する。ここで、$\theta$ と $\frac{\pi}{2}$ の大小関係により場合分けをする。
+$\angle DOE = \theta \neq \frac{\pi}{2} = \angle DHE$ より、$O \neq H$ であり、<br>三角形 $ODF$ について、$OD = OF = 1 - p$ より、直線 $OH$ と直線 $DF$ は点 $H$ において直交する。<br>ここで、$\theta$ と $\frac{\pi}{2}$ の大小関係により場合分けをする。
 
 **[i] $0 < \theta < \frac{\pi}{2}$ のとき**
 4円 $C, C_1, C_2, C_3$ の位置関係は次図の通りである。
