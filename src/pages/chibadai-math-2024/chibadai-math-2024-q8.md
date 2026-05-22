@@ -67,7 +67,7 @@ description: "千葉大学（理系）数学の過去問データ。最頻出分
 **[1] $\theta = \pi$ のとき**
 3円 $C, C_1, C_2$ の位置関係は下図の通りである。
 
-![図1：$\theta=\pi$の場合の3円](/images/chibadairikei_8_1)
+![図1：$\theta=\pi$の場合の3円](/images/chibadairikei_8_1.png)
 
 上図より、
 $$2p + 2q = 2$$
