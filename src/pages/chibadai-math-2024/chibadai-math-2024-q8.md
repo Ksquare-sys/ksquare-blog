@@ -79,14 +79,14 @@ $$\therefore q = 1-p$$
 
 ![図2：$0<\theta<\pi$の場合の3円](/images/chibadairikei_8_2.png)
 
-円 $C_1, C_2$ は円 $C$ にそれぞれ内接するため、$OD = 1-p, OE = 1-q$ である。また、円 $C_1, C_2$ は互いに外接するため、$DE = p+q$ である。よって、三角形 $ODE$ について、余弦定理より、
-$$DE^2 = OD^2 + OE^2 - 2 \cdot OD \cdot OE \cdot \cos \theta$$
-$$\Leftrightarrow (p+q)^2 = (1-p)^2 + (1-q)^2 - 2(1-p)(1-q)\cos \theta$$
-$$\Leftrightarrow p^2 + 2pq + q^2 = (p^2 - 2p + 1) + (q^2 - 2q + 1) - 2(1-p)\cos \theta + 2(1-p)q\cos \theta$$
-$$\Leftrightarrow q\{p+1-(1-p)\cos \theta\} = 1-p-(1-p)\cos \theta$$
-$$\therefore q = \frac{(1-p)(1-\cos \theta)}{p+1-(1-p)\cos \theta} \cdots ①$$
-である。①は $\theta = \pi$ のときも成り立つため、すべての $\theta$ に対して、
-$$q = \frac{(1-p)(1-\cos \theta)}{p+1-(1-p)\cos \theta}$$
+円 $C_1, C_2$ は円 $C$ にそれぞれ内接するため、$OD = 1-p, OE = 1-q$ である。  また、円 $C_1, C_2$ は互いに外接するため、$DE = p+q$ である。  よって、三角形 $ODE$ について、余弦定理より、
+$$DE^2 = OD^2 + OE^2 - 2 \cdot OD \cdot OE \cdot \cos \theta$$  
+$$\Leftrightarrow (p+q)^2 = (1-p)^2 + (1-q)^2 - 2(1-p)(1-q)\cos \theta$$  
+$$\Leftrightarrow p^2 + 2pq + q^2 = (p^2 - 2p + 1) + (q^2 - 2q + 1) - 2(1-p)\cos \theta + 2(1-p)q\cos \theta$$  
+$$\Leftrightarrow q\{p+1-(1-p)\cos \theta\} = 1-p-(1-p)\cos \theta$$  
+$$\therefore q = \frac{(1-p)(1-\cos \theta)}{p+1-(1-p)\cos \theta} \cdots ①$$  
+である。①は $\theta = \pi$ のときも成り立つため、すべての $\theta$ に対して、  
+$$q = \frac{(1-p)(1-\cos \theta)}{p+1-(1-p)\cos \theta}$$  
 が成り立つ。
 
 ---
