@@ -108,7 +108,7 @@ $$\lim_{\theta \to +0} \frac{q}{\theta^2} = \frac{1-p}{p+1-(1-p)\cdot 1} \cdot \
 
 また、三角形 $EDF$ について、$ED=EF=p+q$ より、直線 $EH$ と直線 $DF$ は点 $H$ において直交する。ここで、$\theta$ が $\frac{\pi}{2}$ と一致するか否かで場合分けをする。
 
-**[1] $\theta = \frac{\pi}{2}$ のとき**
+**[1] <br>$\theta = \frac{\pi}{2}$ のとき**
 $\angle DOE = \theta = \frac{\pi}{2} = \angle DHE$ であるため、$O=H$ であり、4円 $C, C_1, C_2, C_3$ の位置関係は次図の通りである。
 
 ![図3：$\theta=\frac{\pi}{2}$の場合の位置関係](/images/chibadairikei_8_3.png)
@@ -118,7 +118,7 @@ $$p = \frac{1}{2}$$
 となる。
 
 
-**[2] $\theta \neq \frac{\pi}{2}$ のとき**
+**[2] <br>$\theta \neq \frac{\pi}{2}$ のとき**
 $\angle DOE = \theta \neq \frac{\pi}{2} = \angle DHE$ より、$O \neq H$ であり、<br>三角形 $ODF$ について、$OD = OF = 1 - p$ より、直線 $OH$ と直線 $DF$ は点 $H$ において直交する。<br>ここで、$\theta$ と $\frac{\pi}{2}$ の大小関係により場合分けをする。
 
 **[i] $0 < \theta < \frac{\pi}{2}$ のとき**
