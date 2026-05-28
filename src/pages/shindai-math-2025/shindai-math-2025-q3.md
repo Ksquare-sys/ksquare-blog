@@ -66,97 +66,87 @@ description: "神戸大学（理系）数学2025年過去問解説。最頻出�
 
 ## ✍️ 模範解答
 
-### (1) 曲線 $C$ の対称性および $C$ と $y$ 軸との共有点の座標を求めよ
+### (1) 曲線 $C$ の概形をかけ
 
-**[対称性について]**
-曲線 $C$ の方程式は
-$$ \begin{cases} x = a \sin \theta \cos \theta & \cdots ① \\ y = |\sin \theta| \sin \theta + \sin \theta & \cdots ② \end{cases} $$
-である。
-①より、$x = \frac{1}{2} a \sin 2\theta$ であるため、$x$ の周期は $\pi$ である。
-また、②において、$-\pi \leqq \theta \leqq \pi$ の範囲（$\theta = t$ とおく）で考えると、
-$\theta = t$ のとき、$y = |\sin t|\sin t + \sin t$
-$\theta = -t$ のとき、$y = |\sin(-t)|\sin(-t) + \sin(-t) = |-\sin t|(-\sin t) - \sin t = -|\sin t|\sin t - \sin t$
-となり、$y(-t) = -y(t)$ である。すなわち、$\theta$ の範囲を $2\pi$ 周期（例えば $-\pi$ から $\pi$）で考えると、曲線 $C$ は原点対称であるが、本問の範囲は $0 \leqq \theta \leqq 2\pi$ であるため、注意が必要である。
+いま、$f(\theta) = \sin \theta, \; g(\theta) = \cos \theta + |\sin \theta|$ とすると、絶対値記号の外れ方から $g(\theta)$ は以下のように場合分けされる。
 
-$\theta$ を $2\pi - \theta$ （ただし $0 \leqq \theta \leqq \pi$）に置き換えると、
-$$ \begin{aligned} x(2\pi-\theta) &= a \sin(2\pi-\theta) \cos(2\pi-\theta) \\ &= a(-\sin\theta)\cos\theta \\ &= -a\sin\theta\cos\theta \\ &= -x(\theta) \\ y(2\pi-\theta) &= |\sin(2\pi-\theta)| \sin(2\pi-\theta) + \sin(2\pi-\theta) \\ &= |-\sin\theta| (-\sin\theta) + (-\sin\theta) \\ &= |\sin\theta| (-\sin\theta) - \sin\theta \\ &= -(|\sin\theta|\sin\theta + \sin\theta) \\ &= -y(\theta) \end{aligned} $$
+$$
+g(\theta) = \begin{cases} \cos \theta + \sin \theta & (0 \leqq \theta \leqq \pi) \\ \cos \theta - \sin \theta & (\pi \leqq \theta \leqq 2\pi) \end{cases}
+$$
+
+ここで、$\theta$ の範囲で場合分けをして増減を調べる。
+
+**[1] $0 \leqq \theta \leqq \pi$ のとき**
+このとき、$f(\theta) = \sin \theta, \; g(\theta) = \cos \theta + \sin \theta$ より、各関数を $\theta$ で微分すると、
+$$ f'(\theta) = \cos \theta, \quad g'(\theta) = -\sin \theta + \cos \theta $$
 となる。
-すなわち、曲線 $C$ 上の点 $(x(\theta), y(\theta))$ に対して、点 $(-x(\theta), -y(\theta))$ も曲線 $C$ 上に存在する。
-よって、曲線 $C$ は **原点対称** である。
+三角関数の合成より、$-\sin \theta + \cos \theta = \sqrt{2}\cos\left(\theta + \frac{\pi}{4}\right)$ であるから、
+$0 \leqq \theta \leqq \pi$ の範囲で $f'(\theta) = 0$ となるのは $\theta = \frac{\pi}{2}$ のとき。
+$g'(\theta) = 0$ となるのは $\theta = \frac{\pi}{4}$ のときである。
+よって、この区間における増減表は次表のようになる。
 
-**[y軸との共有点について]**
-共有点の $x$ 座標は $0$ であるため、
-$$ \begin{aligned} a \sin \theta \cos \theta &= 0 \\ \frac{1}{2} a \sin 2\theta &= 0 \end{aligned} $$
-$a > 0$ かつ $0 \leqq \theta \leqq 2\pi$ より、$\sin 2\theta = 0$ となる $2\theta$ の値は、
-$$ 2\theta = 0, \pi, 2\pi, 3\pi, 4\pi $$
-$$ \therefore \theta = 0, \frac{\pi}{2}, \pi, \frac{3}{2}\pi, 2\pi $$
-である。それぞれの $\theta$ の値に対する $y$ の値を求める。
+| $\theta$ | $0$ | $\cdots$ | $\frac{\pi}{4}$ | $\cdots$ | $\frac{\pi}{2}$ | $\cdots$ | $\pi$ |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| $f'(\theta)$ | | $+$ | $+$ | $+$ | $0$ | $-$ | |
+| $g'(\theta)$ | | $+$ | $0$ | $-$ | $-$ | $-$ | |
+| $f(\theta) \; (x)$ | $0$ | $\nearrow$ | $\frac{\sqrt{2}}{2}$ | $\nearrow$ | $1$ | $\searrow$ | $0$ |
+| $g(\theta) \; (y)$ | $1$ | $\nearrow$ | $\sqrt{2}$ | $\searrow$ | $1$ | $\searrow$ | $-1$ |
 
-[i] $\theta = 0, \pi, 2\pi$ のとき
-$$ y = |\sin \theta|\sin \theta + \sin \theta = 0 \cdot 0 + 0 = 0 $$
-[ii] $\theta = \frac{\pi}{2}$ のとき
-$$ y = |\sin \frac{\pi}{2}|\sin \frac{\pi}{2} + \sin \frac{\pi}{2} = 1 \cdot 1 + 1 = 2 $$
-[iii] $\theta = \frac{3}{2}\pi$ のとき
-$$ y = |\sin \frac{3}{2}\pi|\sin \frac{3}{2}\pi + \sin \frac{3}{2}\pi = |-1| \cdot (-1) + (-1) = -2 $$
+ここで、$g(\theta) = 0$ となるのは、$g(\theta) = \sqrt{2}\cos\left(\theta - \frac{\pi}{4}\right)$ に注意すると、$\theta = \frac{3}{4}\pi$ のときであり、このとき $f\left(\frac{3}{4}\pi\right) = \frac{\sqrt{2}}{2}$ となる。
+よって、$x$ 切片は $\left(\frac{\sqrt{2}}{2}, 0\right)$ となり、$y$ 切片は $(0, 1), (0, -1)$ となる。
 
-以上、[i]〜[iii]より、求める共有点の座標は **$(0, 0), (0, 2), (0, -2)$** である。
+**[2] $\pi \leqq \theta \leqq 2\pi$ のとき**
+このとき、$f(\theta) = \sin \theta, \; g(\theta) = \cos \theta - \sin \theta$ となる。
+ここで、$\pi \leqq \theta \leqq 2\pi$ より、$0 \leqq 2\pi - \theta \leqq \pi$ であることに注意して、$\theta$ を $2\pi - \theta$ に置き換えて対称性を調べると、
 
----
+$$
+\begin{aligned}
+f(2\pi - \theta) &= \sin(2\pi - \theta) \\
+&= -\sin \theta \\
+&= -f(\theta)
+\end{aligned}
+$$
+$$
+\begin{aligned}
+g(2\pi - \theta) &= \cos(2\pi - \theta) + |\sin(2\pi - \theta)| \\
+&= \cos \theta + |-\sin \theta| \\
+&= \cos \theta + |\sin \theta| \\
+&= g(\theta)
+\end{aligned}
+$$
 
-### (2) 曲線 $C$ の概形をかけ
+であるから、このときのグラフは [1] で求めた $0 \leqq \theta \leqq \pi$ のときの曲線を $y$ 軸に対して折り返したもの（$y$ 軸対称）となる。
 
-(1)より曲線 $C$ は原点対称であるため、$0 \leqq \theta \leqq \pi$ の範囲における概形を調べ、それを原点に関して対称移動させればよい。
-$0 \leqq \theta \leqq \pi$ のとき $\sin \theta \geqq 0$ であるため、$y$ は
-$$ y = (\sin \theta)\sin \theta + \sin \theta = \sin^2 \theta + \sin \theta $$
-である。
-また、$x = \frac{1}{2} a \sin 2\theta$ である。
-これらを $\theta$ で微分すると、
-$$ \frac{dx}{d\theta} = a \cos 2\theta $$
-$$ \frac{dy}{d\theta} = 2\sin\theta\cos\theta + \cos\theta = \cos\theta(2\sin\theta+1) $$
-$0 \leqq \theta \leqq \pi$ の範囲において、$\frac{dx}{d\theta} = 0$ となるのは $\theta = \frac{\pi}{4}, \frac{3}{4}\pi$、$\frac{dy}{d\theta} = 0$ となるのは $\theta = \frac{\pi}{2}$ である（$2\sin\theta+1 > 0$ である）。
-よって、増減表は以下のようになる。
-
-| $\theta$ | $0$ | $\cdots$ | $\frac{\pi}{4}$ | $\cdots$ | $\frac{\pi}{2}$ | $\cdots$ | $\frac{3}{4}\pi$ | $\cdots$ | $\pi$ |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| $\frac{dx}{d\theta}$ | $+$ | $+$ | $0$ | $-$ | $-$ | $-$ | $0$ | $+$ | $+$ |
-| $x$ | $0$ | $\rightarrow$ | $\frac{a}{2}$ | $\leftarrow$ | $0$ | $\leftarrow$ | $-\frac{a}{2}$ | $\rightarrow$ | $0$ |
-| $\frac{dy}{d\theta}$ | $+$ | $+$ | $+$ | $+$ | $0$ | $-$ | $-$ | $-$ | $-$ |
-| $y$ | $0$ | $\uparrow$ | $\frac{1+\sqrt{2}}{2}$ | $\uparrow$ | $2$ | $\downarrow$ | $\frac{1+\sqrt{2}}{2}$ | $\downarrow$ | $0$ |
-
-※表内の $y$ 軸の値は以下の通り。
-$\theta = \frac{\pi}{4}, \frac{3}{4}\pi \Rightarrow y = (\frac{\sqrt{2}}{2})^2 + \frac{\sqrt{2}}{2} = \frac{1}{2} + \frac{\sqrt{2}}{2} = \frac{1+\sqrt{2}}{2}$
-$\theta = \frac{\pi}{2} \Rightarrow y = 1^2 + 1 = 2$
-
-この増減および(1)の原点対称性より、曲線 $C$ の概形は次図の通りである。
+以上、[1], [2] より、$x = \sin \theta, \; y = \cos \theta + |\sin \theta|$ で表される曲線 $C$ の概形は、次図のようなハート型になる。
 
 ![図1：曲線 $C$ の概形](/images/kouberikei_3_1.png)
 
-また、グラフは $\frac{\pi}{2} < \theta < \frac{3}{2}\pi$ で $x < 0$ となるので、$y$ 軸に関する対称性も見抜くことができる。
+---
 
-### (3) 曲線 $C$ で囲まれた部分の面積 $S$ を求めよ
+### (2) 曲線 $C$ で囲まれた部分の面積を求めよ
 
-(1), (2)で確認した曲線の対称性より、曲線 $C$ は $y$ 軸に関しても対称（かつ原点対称、すなわち $x$ 軸に関しても対称）なハート型の形状をしている。
-したがって、求める全体の面積 $S$ は、第1象限（$x \geqq 0, y \geqq 0$）の面積を4倍、あるいは $x \geqq 0$ の範囲の面積を2倍にすることで計算を簡略化できる。
+いま、曲線 $C$ に囲まれた部分の面積を $S$ とし、また $0 \leqq \theta \leqq \frac{\pi}{2}, \; \frac{\pi}{2} \leqq \theta \leqq \pi$ の各区間における $y$ をそれぞれ $y_1, y_2$ とする。
+曲線 $C$ の $y$ 軸対称性を考慮すると、求める面積 $S$ は $x \geqq 0$ 側の面積を2倍すればよいので、
 
-ここでは、曲線 $C$ の $y$ 軸対称性を考慮し、$x \ge 0$ （すなわち $0 \leqq \theta \leqq \frac{\pi}{2}$ および $\frac{3}{2}\pi \leqq \theta \leqq 2\pi$）の範囲において、上側の曲線を $y_1$、下側の曲線を $y_2$ とおく。
+$$ S = 2\left( \int_{0}^{1} y_1 dx - \int_{0}^{1} y_2 dx \right) $$
 
-$$ S = 2 \left( \int_{0}^{1} y_1 dx - \int_{0}^{1} y_2 dx \right) $$
+となる。ここで、$x = \sin \theta$ より、$\frac{dx}{d\theta} = \cos \theta$ であるから、置換積分を行うと、
 
-ここで、$x = \sin \theta$ より、$\frac{dx}{d\theta} = \cos \theta$ である。
-積分区間 $x: 0 \to 1$ に対応する $\theta$ の範囲は以下のようになる。
-* $y_1$（上側・大半が $0 \leqq \theta \leqq \frac{\pi}{2}$）：$\theta$ は $0 \to \frac{\pi}{2}$
-* $y_2$（下側・大半が $\frac{\pi}{2} \leqq \theta \leqq \pi$）：$\theta$ は $\pi \to \frac{\pi}{2}$
+$$
+\begin{aligned}
+S &= 2\left( \int_{0}^{1} y_1 dx - \int_{0}^{1} y_2 dx \right) \\
+&= 2\left( \int_{0}^{\frac{\pi}{2}} (\cos \theta + \sin \theta)\cos \theta d\theta - \int_{\pi}^{\frac{\pi}{2}} (\cos \theta + \sin \theta)\cos \theta d\theta \right) \\
+&= 2\left( \int_{0}^{\frac{\pi}{2}} (\cos^2 \theta + \sin \theta \cos \theta) d\theta + \int_{\frac{\pi}{2}}^{\pi} (\cos^2 \theta + \sin \theta \cos \theta) d\theta \right) \\
+&= 2\int_{0}^{\pi} (\cos^2 \theta + \sin \theta \cos \theta) d\theta \\
+&= 2\int_{0}^{\pi} \left( \frac{1 + \cos 2\theta + \sin 2\theta}{2} \right) d\theta \\
+&= \left[ \theta + \frac{1}{2}\sin 2\theta - \frac{1}{2}\cos 2\theta \right]_{0}^{\pi} \\
+&= \pi
+\end{aligned}
+$$
 
-これらを置換積分により $\theta$ の積分に直すと、
-$$ \begin{aligned} S &= 2 \left( \int_{0}^{\frac{\pi}{2}} y_1 \cdot \cos \theta d\theta - \int_{\pi}^{\frac{\pi}{2}} y_2 \cdot \cos \theta d\theta \right) \\ &= 2 \left( \int_{0}^{\frac{\pi}{2}} (\cos \theta + \sin \theta)\cos \theta d\theta + \int_{\frac{\pi}{2}}^{\pi} (\cos \theta + \sin \theta)\cos \theta d\theta \right) \\ &= 2 \int_{0}^{\pi} (\cos^2 \theta + \sin \theta \cos \theta) d\theta \end{aligned} $$
+となる。
 
-ここで、2倍角の公式および半角の公式
-$$ \cos^2 \theta = \frac{1 + \cos 2\theta}{2}, \quad \sin \theta \cos \theta = \frac{\sin 2\theta}{2} $$
-を利用して被積分関数を変形する。
-
-$$ \begin{aligned} S &= 2 \int_{0}^{\pi} \left( \frac{1 + \cos 2\theta + \sin 2\theta}{2} \right) d\theta \\ &= \int_{0}^{\pi} (1 + \cos 2\theta + \sin 2\theta) d\theta \\ &= \left[ \theta + \frac{1}{2}\sin 2\theta - \frac{1}{2}\cos 2\theta \right]_{0}^{\pi} \\ &= \left( \pi + 0 - \frac{1}{2} \right) - \left( 0 + 0 - \frac{1}{2} \right) \\ &= \pi \end{aligned} $$
-
-よって、求める面積は **$S = \pi$** となる。
+**（答） $\pi$**
 
 ---
 
