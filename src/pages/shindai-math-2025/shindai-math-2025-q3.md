@@ -76,13 +76,13 @@ $$
 
 ここで、$\theta$ の範囲で場合分けをして増減を調べる。
 
-**[1] $0 \leqq \theta \leqq \pi$ のとき**
+**[1] $0 \leqq \theta \leqq \pi$ のとき**<br>
 このとき、$f(\theta) = \sin \theta, \; g(\theta) = \cos \theta + \sin \theta$ より、各関数を $\theta$ で微分すると、
 $$ f'(\theta) = \cos \theta, \quad g'(\theta) = -\sin \theta + \cos \theta $$
-となる。
+となる。<br>
 三角関数の合成より、$-\sin \theta + \cos \theta = \sqrt{2}\cos\left(\theta + \frac{\pi}{4}\right)$ であるから、
 $0 \leqq \theta \leqq \pi$ の範囲で $f'(\theta) = 0$ となるのは $\theta = \frac{\pi}{2}$ のとき。
-$g'(\theta) = 0$ となるのは $\theta = \frac{\pi}{4}$ のときである。
+$g'(\theta) = 0$ となるのは $\theta = \frac{\pi}{4}$ のときである。<br>
 よって、この区間における増減表は次表のようになる。
 $$
 \begin{array}{|c|c|c|c|c|c|c|c|}
@@ -97,7 +97,7 @@ $$
 ここで、$g(\theta) = 0$ となるのは、$g(\theta) = \sqrt{2}\cos\left(\theta - \frac{\pi}{4}\right)$ に注意すると、$\theta = \frac{3}{4}\pi$ のときであり、このとき $f\left(\frac{3}{4}\pi\right) = \frac{\sqrt{2}}{2}$ となる。
 よって、$x$ 切片は $\left(\frac{\sqrt{2}}{2}, 0\right)$ となり、$y$ 切片は $(0, 1), (0, -1)$ となる。
 
-**[2] $\pi \leqq \theta \leqq 2\pi$ のとき**
+**[2] $\pi \leqq \theta \leqq 2\pi$ のとき**<br>
 このとき、$f(\theta) = \sin \theta, \; g(\theta) = \cos \theta - \sin \theta$ となる。
 ここで、$\pi \leqq \theta \leqq 2\pi$ より、$0 \leqq 2\pi - \theta \leqq \pi$ であることに注意して、$\theta$ を $2\pi - \theta$ に置き換えて対称性を調べると、
 
@@ -121,7 +121,7 @@ $$
 
 以上、[1], [2] より、$x = \sin \theta, \; y = \cos \theta + |\sin \theta|$ で表される曲線 $C$ の概形は、次図のようなハート型になる。
 
-![図1：曲線 $C$ の概形](/images/kouberikei_3_1.png)
+![図1：曲線 $C$ の概形](/images/kouberikei_2025_3_1.png)
 
 ---
 
