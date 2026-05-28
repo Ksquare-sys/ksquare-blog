@@ -84,14 +84,16 @@ $$ f'(\theta) = \cos \theta, \quad g'(\theta) = -\sin \theta + \cos \theta $$
 $0 \leqq \theta \leqq \pi$ の範囲で $f'(\theta) = 0$ となるのは $\theta = \frac{\pi}{2}$ のとき。
 $g'(\theta) = 0$ となるのは $\theta = \frac{\pi}{4}$ のときである。
 よって、この区間における増減表は次表のようになる。
-
-| $\theta$ | $0$ | $\cdots$ | $\frac{\pi}{4}$ | $\cdots$ | $\frac{\pi}{2}$ | $\cdots$ | $\pi$ |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| $f'(\theta)$ | | $+$ | $+$ | $+$ | $0$ | $-$ | |
-| $g'(\theta)$ | | $+$ | $0$ | $-$ | $-$ | $-$ | |
-| $f(\theta) \; (x)$ | $0$ | $\nearrow$ | $\frac{\sqrt{2}}{2}$ | $\nearrow$ | $1$ | $\searrow$ | $0$ |
-| $g(\theta) \; (y)$ | $1$ | $\nearrow$ | $\sqrt{2}$ | $\searrow$ | $1$ | $\searrow$ | $-1$ |
-
+$$
+\begin{array}{|c|c|c|c|c|c|c|c|}
+\hline
+\theta & 0 & \cdots & \frac{\pi}{4} & \cdots & \frac{\pi}{2} & \cdots & \pi \\ \hline
+f'(\theta) & & + & + & + & 0 & - & \\ \hline
+g'(\theta) & & + & 0 & - & - & - & \\ \hline
+f(\theta) \ (x) & 0 & \nearrow & \frac{\sqrt{2}}{2} & \nearrow & 1 & \searrow & 0 \\ \hline
+g(\theta) \ (y) & 1 & \nearrow & \sqrt{2} & \searrow & 1 & \searrow & -1 \\ \hline
+\end{array}
+$$
 ここで、$g(\theta) = 0$ となるのは、$g(\theta) = \sqrt{2}\cos\left(\theta - \frac{\pi}{4}\right)$ に注意すると、$\theta = \frac{3}{4}\pi$ のときであり、このとき $f\left(\frac{3}{4}\pi\right) = \frac{\sqrt{2}}{2}$ となる。
 よって、$x$ 切片は $\left(\frac{\sqrt{2}}{2}, 0\right)$ となり、$y$ 切片は $(0, 1), (0, -1)$ となる。
 
